@@ -1,9 +1,22 @@
-import logo from './logo.svg';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import './App.css';
+import Navitem from './components/Nav';
+import Home from './pages/Home';
+import About from './pages/About';
+import Projects from './pages/Projects';
 
 function App() {
   return (
     <div className="App">
+      <h1>aaron's portfolio</h1>
+      <BrowserRouter>
+        <Navitem />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
