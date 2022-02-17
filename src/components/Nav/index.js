@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom'
 import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
+import DropdownButton from 'react-bootstrap/DropdownButton'
+import Dropdown from 'react-bootstrap/Dropdown'
+import './style.css'
 
 function Navitem() {
     return (
-        <div>
+        <div className='topSpace'>
             <Container>
                 <Nav defaultActiveKey="/" variant="tabs" fill>
                     <Nav.Item>
@@ -14,13 +17,15 @@ function Navitem() {
                     </Nav.Item>
                     <Nav.Item >
                         <Nav.Link>
-                            <Link to="/about">About Us</Link>
+                            <Link to="/about">About</Link>
                         </Nav.Link>
                     </Nav.Item>
                     <Nav.Item >
-                        <Nav.Link>
-                            <Link to="/projects">Projects</Link>
-                        </Nav.Link>
+                        <DropdownButton id="dropdown-basic-button" title="Projects" variant="Secondary">
+                            <Dropdown.Item href="project-1">MoleAim</Dropdown.Item>
+                            <Dropdown.Item href="project-2">e-Gallery</Dropdown.Item>
+                            <Dropdown.Item href="project-2">Music Lib</Dropdown.Item>
+                        </DropdownButton>
                     </Nav.Item>
                 </Nav>
             </Container>

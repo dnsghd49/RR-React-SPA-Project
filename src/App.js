@@ -8,7 +8,6 @@ import Projects from './pages/Projects';
 function App() {
   return (
     <div className="App">
-      <h1>aaron's portfolio</h1>
       <BrowserRouter>
         <Navitem />
         <Routes>
