@@ -22,9 +22,9 @@ function Navitem() {
                     </Nav.Item>
                     <Nav.Item >
                         <DropdownButton id="dropdown-basic-button" title="Projects" variant="Secondary">
-                            <Dropdown.Item href="project-1">MoleAim</Dropdown.Item>
-                            <Dropdown.Item href="project-2">e-Gallery</Dropdown.Item>
-                            <Dropdown.Item href="project-2">Music Lib</Dropdown.Item>
+                            <Dropdown.Item href="/moleaim">MoleAim</Dropdown.Item>
+                            <Dropdown.Item href="/e-gallery">e-Gallery</Dropdown.Item>
+                            <Dropdown.Item href="/musiclib">Music Lib</Dropdown.Item>
                         </DropdownButton>
                     </Nav.Item>
                 </Nav>

@@ -3,7 +3,9 @@ import './App.css';
 import Navitem from './components/Nav';
 import Home from './pages/Home';
 import About from './pages/About';
-import Projects from './pages/Projects';
+import MusicLib from './pages/MusicLib';
+import MoleAim from './pages/MoleAim';
+import Gallery from './pages/Gallery'
 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/e-gallery" element={<Gallery />} />
+          <Route path="/moleaim" element={<MoleAim />} />
+          <Route path="/musiclib" element={<MusicLib />} />
         </Routes>
       </BrowserRouter>
     </div>
